@@ -1,0 +1,24 @@
+Projede ana index.html sayfasını degısebılırsın
+kodlar src altında olmak zorundaymıs
+
+1 zipi bir klasore koy ve buraya ayıkla de
+2 ayıkladıgın klasorun ıcını ac ve icindekilere ana dosyana kes yapıstır
+3 zipi o dosyadan cıkar ve icerigini kestigin dosyayı da sil
+
+4 terminal ac npm install yaz (node_modules dosyası altına moduller inicek)
+5 npm run build de (bundle klasoru oluscak)
+6 terminal de + ya basarak yeni bir terminal acılır cunku server orada acılcakmıs hep calısır olmalıymıs
+7 bu terminalde npm run start yapılır ve verilen local hosttan server baslatılır
+-- bu server hep calısır durumda olması lazım index sayfası burada goruntulenıyor 
+-- eger ctrl + c ve yes dersek server kapanıyor (tekrar baslatmak ıcın npm run start)
+
+JSON SERVER ICIN
+1 https://github.com/typicode/json-server gidebilirsin kod ıcın ama altta yazdım npm install kodunu
+2 terminal 1 de npm install -g json-server calıstır
+3 yeni klasor ac fake-api icine .json dosyası ver ismi onemlı
+4 o github sayfasında json datası al onu olusturdugun json dosyasına ekle (denemek ıcın)
+5 package.json gel ve yeni script koy :  "fake-api": "json-server --watch fake-api/employee.json"
+6 bu scripti koyma amacımız windows direkt terminalde bu islemi yapmamız ızın vermıyor.
+7 3.terminali ac orada npm run fake-api komutu calıstır. (fake rest api 3000 portta calısmıs olmalı)
+8 npm package sayesinde rest api olusturmus olduk
+8 artık .json dosyandaki her degisiklik icin local host 3000 portta gormelısın
