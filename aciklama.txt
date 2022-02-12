@@ -13,7 +13,7 @@ kodlar src altında olmak zorundaymıs
 -- eger ctrl + c ve yes dersek server kapanıyor (tekrar baslatmak ıcın npm run start)
 
 JSON SERVER ICIN
-1 https://github.com/typicode/json-server gidebilirsin kod ıcın ama altta yazdım npm install kodunu
+1 https://github.com/typicode/json-server gidebilirsin kod ıcın ama adım 2 de  yazdım npm install kodunu
 2 terminal 1 de npm install -g json-server calıstır
 3 yeni klasor ac fake-api icine .json dosyası ver ismi onemlı
 4 o github sayfasında json datası al onu olusturdugun json dosyasına ekle (denemek ıcın)

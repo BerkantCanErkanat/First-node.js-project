@@ -1,10 +1,10 @@
 {
-    "employees" : [
-        {
-            "name":"Berkant Can Erkanat",
-            "departmant":"IT",
-            "salary":4000,
-            "id":1
-        }
-    ]
+  "employees": [
+    {
+      "name": "Seren Erkanat",
+      "departmant": "HR",
+      "salary": 10000,
+      "id": 3
+    }
+  ]
 }
