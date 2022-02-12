@@ -1,6 +1,6 @@
 //Request sınıfını import ediyoruz
 import { Request } from "./requests";
-
+import { Ui } from "./ui";
 
 
 //ELEMENTLER
@@ -13,10 +13,22 @@ const updateEmployeeButton = document.getElementById("update");
 
 //Request objesi
 const request = new Request("http://localhost:3000/employees");
-//GET
-// request.get()
-// .then(employees => console.log(employees))
-// .catch(err => console.error(err));
+
+//Ui objesi
+const ui = new Ui();
+
+//event listeners
+addEventListeners();
+
+function addEventListeners() {
+    document.addEventListener("DOMContentLoaded",getAllEmployees);
+}
+function getAllEmployees(){
+    request.get()
+    .then(employees => ui.addEmployeesToUI(employeesList,employees))
+    .catch(err => console.error(err));
+}
+
 // //POST
 // request.post({name:"Seren Erkanat",departmant:'HR',salary:10000})
 // .then(addedEmployee => console.log(addedEmployee)) //resolvu burda yakaladık
@@ -26,6 +38,6 @@ const request = new Request("http://localhost:3000/employees");
 // .then(changedEmployee => console.log(changedEmployee)) //resolvu burda yakaladık
 // .catch(err => console.error(err));
 //DELETE
-request.delete(1)
-.then(message => console.log(message))
-.catch(error => console.error(error));
+// request.delete(1)
+// .then(message => console.log(message))
+// .catch(error => console.error(error));
