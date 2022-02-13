@@ -1,10 +1,22 @@
 {
   "employees": [
     {
-      "name": "Seren Erkanat",
-      "departmant": "HR",
-      "salary": 10000,
-      "id": 3
+      "name": "damnsss",
+      "departmant": "damn",
+      "salary": 1000,
+      "id": 1
+    },
+    {
+      "name": "asd",
+      "departmant": "asdas",
+      "salary": 12566,
+      "id": 2
+    },
+    {
+      "name": "sa",
+      "departmant": "IT",
+      "salary": 789,
+      "id": 4
     }
   ]
 }
